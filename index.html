@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>главная</title>
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap&subset=cyrillic-ext" rel="stylesheet"/>
+</head>
+<body>
+    
+        <header class="header">
+            <div class="header__container">
+                <a href="" class="header__logo">Alena Decor</a>
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li><a href="" class="menu__link">Раздел 1</a></li>
+                            <li><a href="" class="menu__link">Раздел 2</a></li>
+                            <li><a href="" class="menu__link">Раздел 3</a></li>
+                            <li>
+                                <a href="" class="menu__link">страница 1</a>
+                                <span class="menu__arrow"></span>
+                                <ul class="menu__sub-list">
+                                    <li>
+                                        <a href="" class="menu__sub-link">раздел страницы 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="menu__sub-link">раздел страницы 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="menu__sub-link">раздел страницы 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="" class="menu__link">страница 2</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+    <div class="wrapper">
+    
+
+
+        <div class="content">
+            <heder class="hero-section">
+                <img data-speed=".6" class="hero" src="./img/hero.png" alt="">
+                <div class="container">
+                    <div data-speed=".75" class="main-header">
+                        <h1 class="main-title">web studio </h1>
+                        <h4 class="main-text" >Создаем красивые сайты<br>под ключ</h4>
+                    </div>
+                </div>
+            </heder>
+
+            <div class="portfolio">
+                <div class="container">
+                    <main class="gallery">
+                        <div data-speed=".9" class="gallery__left">
+                            
+                            <a href="https://kikimoraballoon.ru/"><img class="gallery__item" src="./img/work/1.jpg" alt=""></a>
+                            <a href="https://elizaveta-dent55.ru/"><img class="gallery__item" src="./img/work/2.jpg" alt=""></a>
+
+                            <div class="text-block gallery__item">
+                                <h2 class="text-block__h">Сделаем сайт с 40% скидкой</h2>
+                                <p class="text-block__p">для наработки портфолио</p>
+                            </div>
+
+                            <a href="https://www.neptun55.ru/category/1"><img class="gallery__item" src="./img/work/6.jpg" alt=""></a>
+
+                        </div>
+                        <div data-speed="1.1" class="gallery__right">
+                            
+                            <div class="text-block gallery__item">
+                                <h2 class="text-block__h">НАШИ ПРОЕКТЫ</h2>
+                                <p class="text-block__p">Напиши нам для консультации</p>
+                                <a href="https://vk.com/club174977773" class="button-neon-blue">написать</a>
+                            </div>
+                            
+                            <a href="https://elizaveta-dent55.ru/"><img class="gallery__item" src="./img/work/4.jpg" alt=""></a>
+                            <a href="https://kikimoraballoon.ru/"><img class="gallery__item" src="./img/work/5.jpg" alt=""></a>
+                            <a href="https://kikimoraballoon.ru/"><img class="gallery__item" src="./img/work/3.jpg" alt=""></a>
+                            
+
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="card-cont">
+                <!-- <div class="card" style="--clr:blue">
+                    <div class="card__header"><a href="">
+                        <div class="card__image"><img src="" alt=""></img></div>
+                    </a></div>
+                    <div class="card__body">
+                        <a href=""><div class="card__title">сайты</div></a>
+                        <div class="card__price">50000 руб.</div>
+                        <div class="tooltips">
+                            
+                            <div class="tooltip"><img src="{% static 'shop/foto/h2o 1.png' %}" alt="">
+                                <span class="tooltiptext">Обработка для увеличения времени полета</span>
+                            </div>
+                            
+                            <div class="tooltip"><img src="{% static 'shop/foto/He 1.png' %}" alt="">
+                                <span class="tooltiptext">Шар наполняется безопасным инертным газом гелием</span>
+                            </div>
+                            
+                            <div class="tooltip"><img src="{% static 'shop/foto/oblako.png' %}" alt="">
+                                <span class="tooltiptext">Шар наполняется воздухом</span>
+                            </div>
+                        
+                        </div>    
+                    </div>
+                
+                    <div class="card-footer-wrapper">
+                        <div class="card__footer">
+                            <div class="card__pcs">
+                                <div class="pcs__calc">
+                                    <div class="pcs__calc-minus"><img src="{% static 'shop/foto/minuss.png' %}" alt=""></img></div>
+                                    <div class="pcs__calc-imput">1</div>
+                                    <div class="pcs__calc-plus"><img src="{% static 'shop/foto/plus.png' %}" alt=""></img></div>
+                                </div>
+                                <div class="favorites-cart">
+                                    <a href=""><img src="{% static 'shop/foto/favorites.png' %}" alt="favorites"></img></a>
+                                    <a href=""><img src="{% static 'shop/foto/cart.png' %}" alt="cart"></img></a>
+                                </div>    
+                            </div>
+                        
+                        </div>
+                        <a href="" class="flip-btn">Подробно</a>
+                    </div> 
+                </div> -->
+                
+
+                <div class="card">
+                    <div class="card__header"><a href="">
+                        <div class="card__image"><img src="" alt=""></img></div>
+                    </a></div>
+                    <div class="card__body">
+                        <a href=""><div class="card__title">сайты</div></a>
+                        <div class="card__price">50000 руб.</div>
+                        <div class="tooltips">
+                            
+                            <div class="tooltip"><img src="{% static 'shop/foto/h2o 1.png' %}" alt="">
+                                <span class="tooltiptext">Обработка для увеличения времени полета</span>
+                            </div>
+                            
+                            <div class="tooltip"><img src="{% static 'shop/foto/He 1.png' %}" alt="">
+                                <span class="tooltiptext">Шар наполняется безопасным инертным газом гелием</span>
+                            </div>
+                            
+                            <div class="tooltip"><img src="{% static 'shop/foto/oblako.png' %}" alt="">
+                                <span class="tooltiptext">Шар наполняется воздухом</span>
+                            </div>
+                        
+                        </div>    
+                    </div>
+                
+                    <div class="card-footer-wrapper">
+                        <div class="card__footer">
+                            <div class="card__pcs">
+                                <div class="pcs__calc">
+                                    <div class="pcs__calc-minus"><img src="{% static 'shop/foto/minuss.png' %}" alt=""></img></div>
+                                    <div class="pcs__calc-imput">1</div>
+                                    <div class="pcs__calc-plus"><img src="{% static 'shop/foto/plus.png' %}" alt=""></img></div>
+                                </div>
+                                <div class="favorites-cart">
+                                    <a href=""><img src="{% static 'shop/foto/favorites.png' %}" alt="favorites"></img></a>
+                                    <a href=""><img src="{% static 'shop/foto/cart.png' %}" alt="cart"></img></a>
+                                </div>    
+                            </div>
+                        
+                        </div>
+                        <a href="" class="flip-btn">Подробно</a>
+                    </div> 
+                </div>
+            </div>    
+        </div>
+        
+        
+
+
+    </div> 
+    
+    
+</body>
+</html>
